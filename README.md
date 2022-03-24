@@ -13,12 +13,12 @@ Golang
 #### 使用说明
 generate-password.go (generate-password.exe)  密码字典生成工具,打开后输入密码生成规则,生成1-∞  位长度密码,可根据模式选择不同规则密码。
 
-![生成密码](https://gitee.com/aliu/discoveryRAR/raw/develop/jpg/generate-password.png "生成密码")
+![生成密码](https://gitee.com/aliu/discoveryRAR/raw/develop/IMG/generate-password.png "生成密码")
 
 
 discoveryRAR.go （discoveryRAR.exe） RAR探索器根据生成的password.txt字典进行查找探索。
 
-![探索RAR](https://gitee.com/aliu/discoveryRAR/raw/develop/jpg/discovery.png "探索RAR")
+![探索RAR](https://gitee.com/aliu/discoveryRAR/raw/develop/IMG/discovery.png "探索RAR")
 
 
 example.rar  是示例加密文件密码是0e,可以测试是否正常运行。
