@@ -60,9 +60,9 @@ func unRarCmd(rarpath string, pass string) {
 	// fmt.Println("xxxxxxxxx:", out[outLen-3])
 	if lastLen == 100 || lastLen == 75 { //正确信息长度,
 		fmt.Printf("密码为：%s \n", pass)
-		for {
-			time.Sleep(time.Duration(10) * time.Second)
-		}
+	//	for {
+	//		time.Sleep(time.Duration(10) * time.Second)
+	//	}
 		os.Exit(0)
 	}
 }
@@ -79,7 +79,7 @@ func readPassword(passpath string) {
 			break
 		}
 		pass = pass[:len(pass)-2] // 去除末尾 /n
-		// time.Sleep(time.Duration(2) * time.Millisecond) //延迟避免堵塞
-		unRarCmd(filepath, string(pass))
+		time.Sleep(time.Duration(15) * time.Millisecond) //延迟避免堵塞
+		go unRarCmd(filepath, string(pass))
 	}
 }
