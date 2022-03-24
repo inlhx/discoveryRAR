@@ -21,3 +21,7 @@ discoveryRAR.go （discoveryRAR.exe） RAR探索器根据生成的password.txt�
 ![探索RAR](https://gitee.com/aliu/discoveryRAR/raw/develop/jpg/discovery.png "探索RAR")
 
 
+example.rar  是示例加密文件密码是0e,可以测试是否正常运行。
+
+正确解压后文件存储在：unrar-path下
+
